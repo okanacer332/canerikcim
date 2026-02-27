@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Erik gövdesi için zengin gradyan -->
+    <radialGradient id="plumGradient" cx="30%" cy="30%" r="70%" fx="20%" fy="20%">
+      <stop offset="0%" stop-color="#a3e635" /> <!-- Açık parlak yeşil -->
+      <stop offset="50%" stop-color="#4ade80" /> <!-- Orta yeşil -->
+      <stop offset="90%" stop-color="#16a34a" /> <!-- Koyu yeşil -->
+      <stop offset="100%" stop-color="#15803d" /> <!-- Gölge -->
+    </radialGradient>
+    
+    <!-- Yaprak için gradyan -->
+    <linearGradient id="leafGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#86efac" />
+    </linearGradient>
+
+    <!-- Derinlik ve gölge filtresi -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#166534" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan yuvarlağı (opsiyonel, favicon da şeffaflık genelde iyidir ama bütünlük katar) -->
+  <circle cx="50" cy="50" r="48" fill="#f0fdf4" opacity="0.5" />
+
+  <!-- Can Eriği Gövdesi -->
+  <circle cx="50" cy="55" r="35" fill="url(#plumGradient)" filter="url(#dropShadow)" />
+  
+  <!-- Erik üzerindeki çentik (gerçekçilik katar) -->
+  <path d="M50 20 Q 48 40 50 85 Q 52 40 50 20" fill="none" stroke="#15803d" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Parlama efekti (Işık yansıması) -->
+  <ellipse cx="35" cy="35" rx="10" ry="15" fill="#ffffff" opacity="0.4" transform="rotate(-30 35 35)" />
+  <circle cx="45" cy="25" r="3" fill="#ffffff" opacity="0.6" />
+
+  <!-- Sap -->
+  <path d="M50 20 Q 55 5 65 5" fill="none" stroke="#78350f" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Yaprak -->
+  <path d="M63 6 C 75 -5, 95 15, 85 25 C 75 35, 55 15, 63 6 Z" fill="url(#leafGradient)" filter="url(#dropShadow)" />
+  <!-- Yaprak Damarı -->
+  <path d="M63 6 Q 75 15 85 25" fill="none" stroke="#15803d" stroke-width="1.5" opacity="0.5" />
+</svg>
