@@ -10,9 +10,9 @@ export const CONTENT = {
         titleHighlight: "Can Erikleri",
         titleSuffix: "Kapınızda",
         subtitle: "Mersin Mut'un eşsiz ikliminde yetişen, doğrudan dalından koparılıp aynı gün kargolanan çıtır çıtır can erikleri sofralarınıza ulaşıyor.",
-        primaryButton: "Paketleri İncele",
+        primaryButton: "Taze Erikleri Gör",
         primaryButtonLink: "#products",
-        secondaryButton: "Nasıl Çalışır?",
+        secondaryButton: "Dalından Kapına",
         secondaryButtonLink: "#how-it-works",
         imageAlt: "Taze Can Erikleri",
         floatingNotes: [
