@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mut-green: #22C55E;
+  --color-leaf-green: #15803d;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+}
